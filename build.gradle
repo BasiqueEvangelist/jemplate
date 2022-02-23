@@ -1,0 +1,9 @@
+allprojects {
+    group = "me.basiqueevangelist"
+    version = "0.1.0"
+
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+        options.release = 17
+    }
+}

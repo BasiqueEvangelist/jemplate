@@ -1,0 +1,12 @@
+pluginManagement {
+    includeBuild("..")
+}
+
+rootProject.name = 'test'
+
+includeBuild("..") {
+    dependencySubstitution {
+        substitute module('me.basiqueevangelist:jemplate-core') using project(':jemplate-core')
+        substitute module('me.basiqueevangelist:jemplate-ap') using project(':jemplate-ap')
+    }
+}

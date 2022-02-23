@@ -1,0 +1,9 @@
+rootProject.name = 'jemplate'
+
+include 'plugin'
+include 'ap'
+include 'core'
+
+rootProject.children.each {
+    it.name = "jemplate-" + it.name
+}
